@@ -2,88 +2,98 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-   </style>
+        body {
+            background-color: rgb(224, 224, 224);
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            height: 600px;
+            background-color: rgb(206, 206, 206);
+            border-radius: 20px;
+
+        }
+
+
+
+        .pirveli {
+            background-color: #733fc8;
+            width: 560px;
+            height: 280px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .grup {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .meore {
+            background-color: rgb(73 85 107);
+            width: 290px;
+            height: 280px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+
+
+        .mesame {
+            background-color: rgb(255, 255, 255);
+            width: 290px;
+            height: 280px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+
+
+        .meotxe {
+            background-color: #18202d;
+            width: 560px;
+            height: 280px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+
+        .mexute {
+            background-color: rgb(255, 255, 255);
+            width: 290px;
+            height: 576px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-   <header> Advanced HTML tag for table usingthead,tbody and tfoot </header>
-   <table border="4" width="600" style="border-color: blue;">
-      <tbody>
-         <tr>
-            <th colspan="4">purchase order:987654321 </th>
-            <th colspan="2"> tutorialbrain_10thoct 2020</th>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <td colspan="3"> <b>Vendor:</b><br>
-               ABC XYZ itd.<br>
-               DUMMY STREET<br>
-               BUILDING 123<br>
-               HAZARIBAGH,JHARKHAND.825301</td>
-            <td colspan="3"><b>SHIP TO:</b><br>
-               MS DHONI<br>
-               WILSON GARDEN<br>
-               SOUTHEAST BLOCK,RANCHI-834001</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <th colspan="1">QTY</th>
-            <th colspan="2"> item code</th>
-            <th colspan="1">Description</th>
-            <th colspan="2">UNIT Price</th>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <td colspan="1">100</td>
-            <td colspan="2">LABCDE</td>
-            <td colspan="1">Pencils</td>
-            <td colspan="2">20.00</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <td colspan="1">1000</td>
-            <td colspan="2">IN877</td>
-            <td colspan="1">Notebook</td>
-            <td colspan="2">100.00</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <td colspan="1">500</td>
-            <td colspan="2">IP8675</td>
-            <td colspan="1">Pens</td>
-            <td colspan="2">70.00</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <th colspan="4">Subtotal</th>
-            <td colspan="2">190.00</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <th colspan="3">GST</th>
-            <td colspan="1">5%</td>
-            <td colspan="2">9.50</td>
-         </tr>
-      </tbody>
-      <tbody>
-         <tr>
-            <th colspan="4">Grand total</th>
-            <td colspan="2">$199.50</td>
-         </tr>
-      </tbody>
-   </table>
+    <main>
+        <div class="grup">
+            <div class="pirveli">1</div>
+            <div class="meore">2</div>
+            <div class="mesame">3</div>
+            <div class="meotxe">4</div>
+        </div>
+        <div>
+            <div class="mexute">5</div>
+        </div>
+    </main>
 </body>
 
 </html>
