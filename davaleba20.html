@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamarjoba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        main {
+            margin: 0 auto;
+            max-width: 1200px;
+            border: 1px solid gray;
+            height: 750px;
+        }
+
+        .baratebi {
+            position: relative;
+            background-image: url(./bg-main-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 420px;
+            height: 100%;
+        }
+
+        .barati {
+            border-radius: 15PX;
+            width: 530px;
+            height: 470px;
+            position: absolute;
+            left: 100px;
+            top: 120px;
+        }
+
+        .lurji-barati {
+            width: 390px;
+            height: 200px;
+            background-image: url(./bg-card-front.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            position: relative;
+            left: 30px;
+            margin: 20px 0;
+        }
+
+        .shavi-barati {
+            width: 390px;
+            height: 200px;
+            background-image: url(./bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+            left: 110px;
+            display: flex;
+
+        }
+
+        .nulebi {
+            color: white;
+            font-size: 33px;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 100px;
+
+        }
+
+        .jane {
+            color: white;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 115px;
+            padding: 0 23px;
+
+        }
+
+        .big {
+            border: 1px solid white;
+            background-color: azure;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            margin: 15px;
+        }
+
+        .small {
+            position: absolute;
+            top: 25px;
+            left: 65px;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        /*baratebi movrchi exla mivxedo meore slaids */
+
+
+        .paroli {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 640px;
+            top: 160px;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+        }
+
+
+
+        .name {
+            width: 318px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+
+        }
+
+        .data {
+            width: 65px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            text-align: center;
+
+        }
+
+        .text {
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-left: 15px;
+        }
+
+        .txt {
+            margin-left: 15px;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .sami-items {
+            display: flex;
+            gap: 5px;
+            margin: 30px 0;
+        }
+
+
+        button {
+            width: 318px;
+            height: 40px;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(40, 13, 59);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="baratebi">
+            <div class="barati">
+                <div class="lurji-barati">
+                    <span class="big"></span>
+                    <span class="small"></span>
+
+                    <div class="nulebi">
+                        <a>0000 0000 0000 0000</a>
+                    </div>
+
+                    <div class="jane">
+                        <a>JANE APPLESEED</a>
+                        <a>00/00</a>
+                    </div>
+
+                </div>
+                <div class="shavi-barati"></div>
+            </div>
+
+            <div class="paroli">
+                <form>
+
+                    <div>
+                        <label>
+                            <p>CARDHOLDER NAME</p>
+                            <input class="name" type="text" placeholder="e.g jane Appleseed">
+                        </label>
+                        <br><br>
+                        <label>
+                            <p>CARD NUMBER</p>
+                            <input class="name" type="number" placeholder="e.g.1234 5678 9123 0000 ">
+                        </label>
+                    </div>
+
+
+                    <div class=" sami-items">
+                        <label>
+                            <p>EXP.DATE</p>
+                            <input class="data" type="text" placeholder="MM">
+                        </label>
+                        <label>
+                            <P>{MM/YY}</P>
+                            <input class="data" type="text" placeholder="YY">
+                        </label>
+
+                        <label>
+                            <P class="txt">CVC</P>
+                            <input class="text" type="text" placeholder="e.g.123">
+                        </label>
+                    </div>
+
+
+                    <button> Confirm</button>
+
+
+
+                </form>
+            </div>
+    </main>
+</body>
+
+</html>
