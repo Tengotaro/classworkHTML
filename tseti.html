@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+
+    header {
+      height: 11vh;
+      background-color: #e10026;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      background-color: #e10026;
+    }
+
+    nav ul li a {
+      color: bisque;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: black;
+
+    }
+
+
+
+    \\ nav {
+      position: absolute;
+      overflow: hidden;
+      display: flex;
+      right: 0;
+      top: 0;
+      height: 0;
+      width: 0;
+
+    }
+
+
+
+    .menu:hover~nav {
+      height: 510px;
+      background-color: rgb(167, 10, 10);
+      width: 50%;
+
+    }
+
+    nav:hover {
+      width: 50%;
+      height: 510px;
+      background-color: none;
+    }
+
+    \\ .rockisphoto {
+      overflow: hidden;
+      border-bottom: 3px solid #ff002b;
+    }
+
+    .rockisphoto img {
+      margin-left: -40%;
+      height: 210%;
+      width: 210%;
+    }
+
+    button {
+      border-radius: 25px;
+      width: 200px;
+      height: 50px;
+      border: 1px solid #e10026;
+      background-color: #e10026;
+      color: white;
+
+
+    }
+
+
+
+    .roki {
+      overflow: hidden;
+      border-bottom: 2px solid #e10026;
+      position: relative;
+
+    }
+
+    .Cactus {
+      color: #8f1525;
+      font-family: With Cantus;
+    }
+
+    .ezdi {
+      right: 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: absolute;
+      top: 20%;
+
+    }
+
+    .lets-rock img {
+      align-items: start;
+      margin-left: -40%;
+      height: 200%;
+      width: 220%;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    .text-in-lets-roki {
+      position: absolute;
+      text-align: center;
+      top: 20%;
+      left: 50%;
+
+
+
+    }
+
+    .text-in-lets-roki h2 {
+      letter-spacing: 5px;
+      font-size: 50px;
+      color: #e10026;
+
+
+    }
+
+    .text-in-lets-roki h3 {
+      letter-spacing: 5px;
+      font-size: 32px;
+    }
+
+    .text-in-lets-rock a {
+      position: absolute;
+      top: 110%;
+      border-radius: 25px;
+      padding: 5%;
+      color: rgb(184, 2, 2);
+      letter-spacing: 1px;
+      font-size: 20px;
+      left: 20%;
+      background-color: #e10026;
+
+
+
+
+    }
+
+    .text-in-lets-rock a:hover {
+      background-color: transparent;
+      color: #414141;
+      border: 1px solid #e10026;
+      transition: all ease-in-out 0.2s;
+
+
+
+    }
+
+    .bji {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .box {
+      margin-bottom: 10%;
+    }
+
+    .box img {
+      width: 100%;
+    }
+
+
+    .kureqere {
+      margin-top: 5%;
+    }
+
+
+    .kureqere h2,
+    .text-in-latest-videos h2 {
+      font-size: 30px;
+    }
+
+    .kureqere h3,
+    .text-in-latest-videos h3 {
+      font-size: 28px;
+      color: #e10026;
+    }
+
+
+
+    .boxshi {
+      background-color: #e10026;
+      height: 70px;
+      color: white;
+
+    }
+
+    .latest-videos video {
+      height: 40vh;
+      width: 100%;
+    }
+
+    .table-below-videos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    table {
+      margin: 5% 0%;
+      font-family: customfont2;
+      background-color: whitesmoke;
+      width: 90%;
+    }
+
+    td {
+      padding: 1% 5%;
+      font-size: 22px;
+    }
+
+    th {
+      padding: 1% 5%;
+      font-size: 22px;
+    }
+
+    .first-box {
+      background-color: #c90028;
+      color: white;
+    }
+
+    .saxeli {
+      color: #e10026;
+      font-size: 32px;
+    }
+
+    .gamowera {
+      margin: 5% 0%;
+      color: grey;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 10%;
+    }
+
+
+
+    footer {
+      margin: 7% 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .buttons-in-footer {
+      margin: 10% 0%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      display: none;
+    }
+
+    .buttons-in-footer a {
+      color: rgb(0, 0, 0);
+    }
+
+    .buttons-in-footer a:hover {
+      border-bottom: 1px solid #7e0707;
+      background-color: #9c0808;
+      border-radius: 6px;
+      transition: all ease-in-out 0.10s;
+      color: white;
+    }
+
+    .border {
+      border: 1px solid grey;
+      background-color: grey;
+      width: 100%;
+    }
+
+    .witeli {
+      color: #ffffff;
+    }
+
+    @media screen and (min-width: 870px) {
+      nav a {
+        color: rgb(255, 255, 255);
+      }
+
+      .meniua {
+        display: none;
+      }
+
+      .menu:hover~nav {
+        background-color: none;
+      }
+
+
+
+
+      .ezdi {
+        right: 30%;
+        top: 20%;
+        gap: 20px;
+      }
+
+      .roki img {
+        align-items: start;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .bji {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .kureqere,
+      .text-in-latest-videos {
+        text-align: center;
+      }
+
+      .latest-videos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .latest-videos video {
+        width: 60%;
+        height: 60%;
+      }
+
+
+      footer {
+        margin: 1%;
+      }
+
+      .buttons-in-footer {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 1500px) {
+      .ezdi {
+        right: 40%;
+        top: 30%;
+        gap: 30px;
+      }
+    }
+
+    @media screen and (max-width: 870px) {
+      nav {
+        width: 95%;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+
+      table {
+        display: none;
+        margin: 5% 0%;
+        font-family: customfont2;
+        background-color: rgb(235, 235, 235);
+        width: 90%;
+      }
+
+    }
+
+    @media screen and (max-width: 800px) {
+      .text-in-lets-rock {
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        left: 40%;
+      }
+    }
+  </style>
+</head>
+<header>
+  <div>
+    <a href=""><img src="./logo.png" alt="logo"></a>
+  </div>
+  <div class="pirveli">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">EVENTS</a></li>
+      <li><a href="">GALLERY</a></li>
+      <li><a href="">NEWS</a></li>
+      <li><a href="">ALBUMS</a></li>
+      <li><a href="">PAGES</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<div class="roki">
+  <img src="./slider (1).png" alt="rockisphoto" />
+  <div class="ezdi">
+    <p>LET'S ROCK</p>
+    <p class="Cantus">With Cantus</p>
+    <button>DESCOVER MORE</button>
+  </div>
+</div>
+<div class="kureqere">
+  <h2>INTRODUCING</h2>
+  <h3 class="Cactus">Our Members</h3>
+</div>
+<div class="bji">
+  <div class="intro-first box">
+    <img src="./foto11.png" alt="jone smith" />
+    <a href="">
+      <div class="boxshi">
+        <h2>Jone Smith</h2>
+        <h3>Vocal</h3>
+      </div>
+    </a>
+  </div>
+  <div class="intro-second box">
+    <img src="./foto1 2.png" alt="rendi outhor" />
+    <a href="">
+      <div class="boxshi">
+        <h2>Rendi Outhor</h2>
+        <h3>Drum</h3>
+      </div>
+    </a>
+  </div>
+  <div class="intro-third box">
+    <img src="./foto 13.png" alt="renes odim" />
+    <a href="">
+      <div class="boxshi">
+        <h2>Renes Odim</h2>
+        <h3>Guiter</h3>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="latest-videos">
+  <div class="text-in-latest-videos">
+    <h2>LATEST</h2>
+    <h3>Videos</h3>
+  </div>
+  <video controls muted src="./videoplayback.mp4"></video>
+</div>
+<div class="table-below-videos">
+  <table>
+    <tr class="first-box">
+      <td>SINGERS</td>
+      <td>SINGLES</td>
+      <td>AWWARDS</td>
+    </tr>
+    <tr>
+      <td class="saxeli">
+        Adele
+      </td>
+      <th>20</th>
+      <th>15</th>
+    </tr>
+    <tr>
+      <td class="saxeli">
+        Taylor Swift
+      </td>
+      <th>30</th>
+      <th>10</th>
+    </tr>
+    <tr>
+      <td class="saxeli">
+        Bruno Mars
+      </td>
+      <th>10</td>
+      <th>15</th>
+    </tr>
+    <tr>
+      <td class="saxeli ">
+        Rihanna
+      </td>
+      <th>200</th>
+      <th>15</th>
+    </tr>
+    <tr>
+      <td class="saxeli">
+        Ed Sheeran
+      </td>
+      <th>10</th>
+      <th>5</th>
+    </tr>
+    <tr>
+      <td class="saxeli ">
+        Lady Gaga
+      </td>
+      <th>3</th>
+      <th>1</th>
+    </tr>
+  </table>
+</div>
+<div class="gamowera">
+  <h2>Subscribe Newsletter</h2>
+  <a href=""><img src="./isari.png" alt="isari"></a>
+
+</div>
+<div class="bolo"></div>
+</main>
+<footer>
+  <div class="buttons-in-footer">
+    <a href="">HOME</a>
+    <br>
+    <a href="">EVENTS</a>
+    <br>
+    <a href="">GALLERY</a>
+    <br>
+    <a href="">NEWS</a>
+    <br>
+    <a href="">ALBUMS</a>
+    <br>
+    <a href="">PAGES</a>
+  </div>
+  <div class="bolo"></div>
+  <p>Copyright 2009-2016 <b class="witeli">Cantus</b>
+  <h3> their respective owners. Shipped from Salem, Mass. USA.</h3>
+  </p>
+</footer>
+<main>
+  </body>
+
+</html>
+
+</body>
+
+</html>
